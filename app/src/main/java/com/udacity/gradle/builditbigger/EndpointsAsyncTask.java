@@ -21,7 +21,7 @@ import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
  * Created by António "Curtes Malteser" Bastião on 20/04/2018.
  */
 
-class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
     @SuppressLint("StaticFieldLeak")
     private Context context;
