@@ -43,7 +43,7 @@ public class EndpointsAsyncTaskTest {
 
         try {
             EndpointsAsyncTask jokeTask = new EndpointsAsyncTask();
-            jokeTask.execute(new Pair<>(mContext, "lol"));
+            jokeTask.execute(mContext);
             joke = jokeTask.get(30, TimeUnit.SECONDS);
             assertEquals(!joke.isEmpty(), !joke.isEmpty());
         } catch (Exception e) {

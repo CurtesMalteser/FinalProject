@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v4.util.Pair;
+import android.util.Log;
 
 import com.curtesmalteser.myandroidlibrary.JokesActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -21,14 +22,14 @@ import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
  * Created by António "Curtes Malteser" Bastião on 20/04/2018.
  */
 
-public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
     private static MyApi myApiService = null;
     @SuppressLint("StaticFieldLeak")
     private Context context;
 
     @SafeVarargs
     @Override
-    protected final String doInBackground(Pair<Context, String>... params) {
+    protected final String doInBackground(Context... params) {
         if (myApiService == null) {  // Only do this once
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
@@ -48,11 +49,10 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
             myApiService = builder.build();
         }
 
-        context = params[0].first;
-        String name = params[0].second;
+        context = params[0];
 
         try {
-            return myApiService.sayHi(name).execute().getData();
+            return myApiService.getJokes().execute().getFunnyJokes();
         } catch (IOException e) {
             return e.getMessage();
         }
@@ -60,6 +60,8 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
 
     @Override
     protected void onPostExecute(String result) {
+        Log.d("lol", result);
+
         Intent intent = new Intent(context.getApplicationContext(), JokesActivity.class);
         intent.putExtra(context.getResources().getString(R.string.string_intent_joke), result);
         intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
