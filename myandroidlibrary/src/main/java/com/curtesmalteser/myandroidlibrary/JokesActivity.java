@@ -16,6 +16,5 @@ public class JokesActivity extends AppCompatActivity {
         if (getIntent().hasExtra(getString(R.string.string_intent_joke))) {
             tvJokes.setText(getIntent().getStringExtra(getString(R.string.string_intent_joke)));
         }
-
     }
 }

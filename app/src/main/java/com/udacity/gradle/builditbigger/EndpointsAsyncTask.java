@@ -52,7 +52,7 @@ public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
         context = params[0];
 
         try {
-            return myApiService.getJokes().execute().getFunnyJokes();
+            return myApiService.sayJokes().execute().getMyJoke();
         } catch (IOException e) {
             return e.getMessage();
         }

@@ -1,27 +1,78 @@
 Warning: Google App Engine Java 7 runtime is deprecated.
 Warning: See https://cloud.google.com/appengine/docs/deprecations/java7
-abr 26, 2018 10:26:55 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+abr 30, 2018 11:12:55 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
 INFO: Overwriting system property key 'java.util.logging.config.file', value 'F:\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
-abr 26, 2018 10:26:56 PM com.google.apphosting.utils.jetty.JettyLogger info
+abr 30, 2018 11:12:56 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
-abr 26, 2018 8:26:58 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+abr 30, 2018 9:12:57 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
 WARNING: Your working directory, (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend) is not equal to your 
 web application root (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend)
 You will not be able to access files from your working directory on the production server.
 
-abr 26, 2018 8:27:01 PM com.google.apphosting.utils.jetty.JettyLogger info
+abr 30, 2018 9:12:58 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: jetty-6.1.x
-abr 26, 2018 8:27:06 PM com.google.apphosting.utils.jetty.JettyLogger info
+abr 30, 2018 9:13:01 PM com.google.apphosting.utils.jetty.JettyLogger info
 INFO: Started SelectChannelConnector@0.0.0.0:8080
-abr 26, 2018 8:27:06 PM com.google.appengine.tools.development.AbstractModule startup
+abr 30, 2018 9:13:01 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: Module instance default is running at http://localhost:8080/
-abr 26, 2018 8:27:06 PM com.google.appengine.tools.development.AbstractModule startup
+abr 30, 2018 9:13:01 PM com.google.appengine.tools.development.AbstractModule startup
 INFO: The admin console is running at http://localhost:8080/_ah/admin
-abr 26, 2018 10:27:06 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+abr 30, 2018 11:13:01 PM com.google.appengine.tools.development.DevAppServerImpl doStart
 INFO: Dev App Server is now running
-abr 26, 2018 10:27:58 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
+abr 30, 2018 11:13:45 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeByteBufferOperations
 WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-abr 26, 2018 10:27:58 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
+abr 30, 2018 11:13:45 PM com.google.appengine.repackaged.com.google.protobuf.UnsafeUtil supportsUnsafeArrayOperations
 WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
-abr 26, 2018 10:28:00 PM com.google.appengine.tools.development.LocalResourceFileServlet doGet
+abr 30, 2018 11:13:47 PM com.google.appengine.tools.development.LocalResourceFileServlet doGet
 WARNING: No file found for: /favicon.ico
+abr 30, 2018 11:18:36 PM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
+INFO: D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
+abr 30, 2018 11:18:36 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'F:\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+abr 30, 2018 11:18:36 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend) is not equal to your 
+web application root (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+abr 30, 2018 11:22:21 PM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
+INFO: D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
+abr 30, 2018 11:22:21 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'F:\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+abr 30, 2018 11:22:21 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend) is not equal to your 
+web application root (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+abr 30, 2018 11:22:46 PM com.google.appengine.tools.development.JettyContainerService$ScannerListener fileChanged
+INFO: D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
+abr 30, 2018 11:22:46 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'F:\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+abr 30, 2018 11:22:46 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend) is not equal to your 
+web application root (D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+abr 30, 2018 11:22:46 PM com.google.apphosting.utils.jetty.JettyLogger warn
+WARNING: Failed to read file: D:\Development\Android\Udacity\_Nanodegree\FinalProject\backend\build\exploded-backend\WEB-INF\lib\appengine-api-1.0-sdk-1.9.56.jar
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:219)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:149)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.mortbay.jetty.webapp.TagLibConfiguration.configureWebApp(TagLibConfiguration.java:174)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1247)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:517)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:467)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at com.google.appengine.tools.development.JettyContainerService.reloadWebApp(JettyContainerService.java:438)
+	at com.google.appengine.tools.development.JettyContainerService$ScannerListener.fileChanged(JettyContainerService.java:349)
+	at org.mortbay.util.Scanner.reportChange(Scanner.java:464)
+	at org.mortbay.util.Scanner.reportDifferences(Scanner.java:330)
+	at org.mortbay.util.Scanner.scan(Scanner.java:280)
+	at org.mortbay.util.Scanner$1.run(Scanner.java:232)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
